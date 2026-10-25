@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#123b3a">
+<meta name="description" content="آموزش مقدماتی تفسیر رادیوگرافی قفسه سینه، بررسی کیفیت تصویر، آناتومی طبیعی و یافته‌های شایع.">
+<title>آموزش مقدماتی CXR | اوریامد</title>
+
+<style>
+:root{
+  --green:#176b63;
+  --deep:#123b3a;
+  --mint:#e6f4ed;
+  --paper:#f7faf8;
+  --ink:#172b2a;
+  --muted:#657875;
+  --line:#dce8e3;
+  --white:#fff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:85px}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:Tahoma,Arial,sans-serif;line-height:2;
+}
+a{color:var(--green);text-decoration:none}
+.container{width:min(900px,92%);margin:auto}
+header{
+  background:var(--deep);color:white;padding:15px 0;
+}
+.header-inner{
+  display:flex;justify-content:space-between;
+  align-items:center;gap:12px;flex-wrap:wrap;
+}
+.brand{font-size:21px;font-weight:bold}
+.brand small{display:block;font-size:11px;color:#c8e8da}
+.back{
+  color:white;border:1px solid #6b958a;
+  padding:6px 12px;border-radius:9px;font-size:13px;
+}
+.hero{
+  background:linear-gradient(135deg,#123b3a,#176b63);
+  color:white;padding:40px 0;
+}
+.tag{
+  display:inline-block;background:#ffffff18;
+  border:1px solid #ffffff40;padding:3px 12px;
+  border-radius:20px;font-size:12px;
+}
+h1{font-size:clamp(27px,5vw,39px);line-height:1.6;margin:12px 0}
+.hero p{color:#e0eee8;margin-bottom:0}
+.meta{font-size:12px;color:#d0e5dc}
+main{padding:28px 0 50px}
+.card{
+  background:white;border:1px solid var(--line);
+  border-radius:16px;padding:22px;margin-bottom:18px;
+}
+h2{font-size:23px;line-height:1.6;color:var(--deep);margin:0 0 13px}
+h3{font-size:17px;color:var(--green);margin:20px 0 7px}
+p{margin:8px 0}
+ul,ol{padding-right:23px}
+li{margin:5px 0}
+.toc{
+  background:var(--mint);border-radius:12px;
+  padding:17px 20px;
+}
+.toc h2{font-size:19px}
+.toc a{display:block;padding:3px 0}
+.note{
+  background:#fff7e8;border-right:4px solid #d4a653;
+  padding:13px 15px;border-radius:8px;margin:15px 0;
+}
+.info{
+  background:var(--mint);border-right:4px solid var(--green);
+  padding:13px 15px;border-radius:8px;margin:15px 0;
+}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.mini{
+  background:#f7faf8;border:1px solid var(--line);
+  padding:13px;border-radius:11px;
+}
+.mini strong{display:block;color:var(--green)}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{text-align:right;padding:10px;border-bottom:1px solid var(--line)}
+th{background:var(--mint)}
+footer{
+  background:var(--deep);color:#d5e8e1;
+  padding:25px 0;font-size:12px;text-align:center;
+}
+footer a{color:#bfe7d2}
+@media(max-width:600px){
+  .grid{grid-template-columns:1fr}
+  .card{padding:17px}
+  h2{font-size:21px}
+  table{font-size:12px}
+  th,td{padding:7px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container header-inner">
+    <a class="brand" href="../index.html" style="color:white">
+      OuriaMed
+      <small>اوریامد | دانش پزشکی ساده و دقیق</small>
+    </a>
+    <a class="back" href="../index.html">← صفحه اصلی</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <span class="tag">رادیولوژی · آموزش مقدماتی</span>
+    <h1>چطور رادیوگرافی قفسه سینه را بخوانیم؟</h1>
+    <p>
+      یک راهنمای ساده و مرحله‌به‌مرحله برای آشنایی با CXR،
+      تشخیص ساختارهای طبیعی و شناخت اولیه یافته‌های شایع.
+    </p>
+    <p class="meta">زمان مطالعه: حدود ۷ دقیقه · مناسب دانشجویان پزشکی</p>
+  </div>
+</section>
+
+<main class="container">
+
+  <nav class="card toc" aria-label="فهرست مطالب">
+    <h2>فهرست مطالب</h2>
+    <a href="#intro">۱. رادیوگرافی قفسه سینه چیست؟</a>
+    <a href="#quality">۲. بررسی کیفیت تصویر</a>
+    <a href="#normal">۳. آناتومی طبیعی</a>
+    <a href="#method">۴. روش سیستماتیک بررسی تصویر</a>
+    <a href="#diseases">۵. یافته‌های شایع و بیماری‌ها</a>
+    <a href="#pitfalls">۶. خطاهای رایج</a>
+    <a href="#summary">۷. جمع‌بندی</a>
+    <a href="#references">۸. منابع پیشنهادی</a>
+  </nav>
+
+  <section class="card" id="intro">
+    <h2>۱. رادیوگرافی قفسه سینه چیست؟</h2>
+    <p>
+      رادیوگرافی قفسه سینه یا Chest X-ray (CXR) یکی از
+      رایج‌ترین روش‌های تصویربرداری است که برای ارزیابی ریه‌ها،
+      پلور، قلب، مدیاستن، دیافراگم و استخوان‌های قفسه سینه استفاده می‌شود.
+    </p>
+    <p>
+      این بررسی می‌تواند به شناسایی یافته‌هایی مانند پنومونی،
+      ادم ریوی، پلورال افیوژن و پنوموتوراکس کمک کند.
+      بااین‌حال، طبیعی بودن عکس همیشه بیماری را رد نمی‌کند.
+    </p>
+    <div class="info">
+      <strong>اصل مهم:</strong>
+      قبل از تفسیر جزئیات، ابتدا مطمئن شو تصویر متعلق به بیمار درست
+      است، کیفیت مناسبی دارد و نمای تصویربرداری را می‌دانی.
+    </div>
+  </section>
+
+  <section class="card" id="quality">
+    <h2>۲. بررسی کیفیت تصویر</h2>
+    <p>قبل از بررسی بیماری‌ها، چهار مورد را ارزیابی کن:</p>
+
+    <h3>الف) نما (Projection)</h3>
+    <ul>
+      <li><strong>PA:</strong> معمولاً بیمار ایستاده و قفسه سینه به دتکتور نزدیک است. برای ارزیابی اندازه قلب مناسب‌تر است.</li>
+      <li><strong>AP:</strong> در بیماران بستری و تصاویر پرتابل شایع است. می‌تواند اندازه قلب را بزرگ‌تر از واقع نشان دهد.</li>
+      <li><strong>لترال (Lateral):</strong> نمای جانبی است و به تعیین محل برخی ضایعات کمک می‌کند.</li>
+    </ul>
+
+    <h3>ب) چرخش (Rotation)</h3>
+    <p>
+      فاصله زوائد خاری مهره‌ها تا انتهای داخلی ترقوه‌ها را مقایسه کن.
+      عدم تقارن می‌تواند نشان‌دهنده چرخش بیمار باشد و ارزیابی
+      مدیاستن و اندازه قلب را دشوار کند.
+    </p>
+
+    <h3>ج) دم (Inspiration)</h3>
+    <p>
+      در یک تصویر مناسب، معمولاً حدود ۹ تا ۱۰ دنده خلفی بالای
+      دیافراگم قابل مشاهده‌اند؛ اما این معیار به وضعیت بیمار و
+      کیفیت تصویر وابسته است.
+    </p>
+    <p>
+      دم ناکافی باعث فشرده‌تر دیده شدن ریه‌ها و افزایش ظاهری
+      تراکم عروق و سایه قلب می‌شود.
+    </p>
+
+    <h3>د) میزان نفوذ اشعه (Exposure)</h3>
+    <p>
+      در تصویر مناسب، ستون مهره‌ها به‌صورت محو از پشت سایه قلب
+      قابل تشخیص‌اند. نفوذ ناکافی یا بیش‌ازحد می‌تواند ارزیابی
+      ریه‌ها و ساختارهای اطراف را دشوار کند.
+    </p>
+
+    <div class="note">
+      کیفیت نامناسب لزوماً به معنی غیرقابل استفاده بودن تصویر نیست؛
+      باید محدودیت‌های آن را هنگام تفسیر در نظر گرفت.
+    </div>
+  </section>
+
+  <section class="card" id="normal">
+    <h2>۳. آناتومی طبیعی در CXR</h2>
+
+    <div class="grid">
+      <div class="mini">
+        <strong>ریه‌ها</strong>
+        عمدتاً تیره دیده می‌شوند؛ چون هوا پرتو ایکس را کمتر جذب می‌کند.
+      </div>
+      <div class="mini">
+        <strong>قلب و مدیاستن</strong>
+        نسبت به ریه‌ها روشن‌ترند؛ اندازه و شکل آن‌ها باید با توجه
+        به نما و وضعیت بیمار ارزیابی شود.
+      </div>
+      <div class="mini">
+        <strong>دیافراگم</strong>
+        معمولاً نیمه راست کمی بالاتر از نیمه چپ قرار دارد.
+        زاویه‌های کوستوفرنیک در حالت طبیعی تیز هستند.
+      </div>
+      <div class="mini">
+        <strong>استخوان‌ها و بافت نرم</strong>
+        دنده‌ها، ترقوه‌ها، مهره‌ها و بافت نرم دیواره قفسه سینه
+        نیز باید بررسی شوند.
+      </div>
+    </div>
+
+    <h3>سیاهی و سفیدی تصویر چه معنایی دارند؟</h3>
+    <p>
+      به‌طور کلی، هوا تیره‌تر و ساختارهای متراکم مانند استخوان
+      روشن‌تر دیده می‌شوند. مایع و بافت نرم نیز معمولاً تراکم
+      مشابهی دارند؛ بنابراین تشخیص آن‌ها صرفاً بر اساس سفیدی
+      تصویر امکان‌پذیر نیست.
+    </p>
+  </section>
+
+  <section class="card" id="method">
+    <h2>۴. روش سیستماتیک بررسی تصویر</h2>
+    <p>
+      برای کاهش احتمال جا انداختن یافته‌ها، هر بار از یک ترتیب ثابت
+      استفاده کن. یکی از روش‌های ساده، بررسی ABCDE است.
+    </p>
+
+    <h3>A — Airway | راه هوایی</h3>
+    <p>
+      نای را بررسی کن. آیا تقریباً در خط وسط است یا به یک سمت
+      جابه‌جا شده؟ جابه‌جایی باید در کنار سایر یافته‌ها تفسیر شود.
+    </p>
+
+    <h3>B — Breathing | ریه‌ها و پلور</h3>
+    <p>
+      هر دو ریه را از رأس تا قاعده مقایسه کن. به تراکم‌های غیرطبیعی،
+      کاهش حجم، افزایش شفافیت و وجود احتمالی خط پلور توجه کن.
+    </p>
+
+    <h3>C — Circulation | قلب و عروق</h3>
+    <p>
+      اندازه و شکل سایه قلب، مدیاستن و الگوی عروق ریوی را بررسی کن.
+      در نمای PA، نسبت قطر عرضی قلب به قطر داخلی قفسه سینه
+      معمولاً کمتر از ۰٫۵ است؛ این معیار در نمای AP قابل اتکای
+      مشابهی ندارد.
+    </p>
+
+    <h3>D — Diaphragm | دیافراگم</h3>
+    <p>
+      ارتفاع دو نیمه دیافراگم، زاویه‌های کوستوفرنیک و وجود هوای
+      غیرطبیعی زیر دیافراگم را بررسی کن.
+    </p>
+
+    <h3>E — Everything else | سایر ساختارها</h3>
+    <p>
+      استخوان‌ها، بافت نرم، خطوط و لوله‌های پزشکی و هر ناحیه‌ای
+      را که در مراحل قبلی بررسی نشده است ارزیابی کن.
+    </p>
+
+    <div class="info">
+      <strong>نکته:</strong>
+      ABCDE یک چارچوب آموزشی برای بررسی منظم است، نه جایگزین
+      تفسیر کامل رادیولوژی یا ارزیابی بالینی بیمار.
+    </div>
+  </section>
+
+  <section class="card" id="diseases">
+    <h2>۵. یافته‌های شایع و بیماری‌ها</h2>
+    <p>
+      در این بخش فقط با الگوهای اولیه آشنا می‌شویم.
+      هیچ‌کدام از این یافته‌ها به‌تنهایی تشخیص قطعی ایجاد نمی‌کنند.
+    </p>
+
+    <h3>۱. پنومونی (Pneumonia)</h3>
+    <p>
+      ممکن است به شکل افزایش موضعی تراکم ریه دیده شود.
+      وجود air bronchogram می‌تواند به تشخیص کمک کند.
+      شرح حال، علائم حیاتی و معاینه برای تفسیر اهمیت دارند.
+    </p>
+
+    <h3>۲. پلورال افیوژن (Pleural effusion)</h3>
+    <p>
+      تجمع مایع در فضای پلور ممکن است باعث محو شدن زاویه
+      کوستوفرنیک و ایجاد کدورت در قاعده ریه شود.
+      در افیوژن بزرگ، شکل کدورت می‌تواند به‌صورت منیسک باشد.
+    </p>
+
+    <h3>۳. پنوموتوراکس (Pneumothorax)</h3>
+    <p>
+      وجود خط پلور احشایی و نبود علائم عروقی در سمت خارجی آن
+      از یافته‌های مهم است. در پنوموتوراکس فشاری ممکن است
+      جابه‌جایی مدیاستن و افت دیافراگم دیده شود؛ تشخیص وضعیت
+      فشاری باید با شرایط بالینی تطبیق داده شود.
+    </p>
+
+    <h3>۴. ادم ریوی (Pulmonary edema)</h3>
+    <p>
+      ممکن است با افزایش کدورت‌های دوطرفه، تغییر الگوی عروق،
+      خطوط بینابینی یا پلورال افیوژن همراه باشد.
+      یافته‌ها به علت و شدت بیماری بستگی دارند.
+    </p>
+
+    <h3>۵. آتلکتازی (Atelectasis)</h3>
+    <p>
+      کاهش حجم بخشی از ریه می‌تواند باعث افزایش تراکم و نشانه‌های
+      کشش ساختارها به سمت ناحیه درگیر شود؛ مانند جابه‌جایی شقاق
+      یا بالا رفتن نیمه دیافراگم.
+    </p>
+
+    <h3>۶. بزرگی سایه قلب (Cardiomegaly)</h3>
+    <p>
+      بزرگ بودن سایه قلب در نمای PA می‌تواند مطرح‌کننده بزرگی قلب
+      باشد. نمای AP، دم ناکافی و سایر عوامل تکنیکی ممکن است
+      اندازه قلب را به‌صورت کاذب بزرگ نشان دهند.
+    </p>
+
+    <div class="note">
+      در بیمار بدحال، یافته‌هایی مانند پنوموتوراکس فشاری،
+      ادم شدید ریه و جابه‌جایی قابل‌توجه مدیاستن نیازمند
+      ارزیابی فوری بالینی هستند. نباید برای اقدام ضروری،
+      منتظر تفسیر آموزشی یا گزارش نهایی ماند.
+    </div>
+  </section>
+
+  <section class="card" id="pitfalls">
+    <h2>۶. خطاهای رایج در شروع یادگیری</h2>
+    <ul>
+      <li>شروع تفسیر بدون بررسی نما و کیفیت تصویر.</li>
+      <li>بررسی یک ریه و فراموش کردن مقایسه با سمت مقابل.</li>
+      <li>نادیده گرفتن استخوان‌ها، دیافراگم و بافت نرم.</li>
+      <li>تشخیص قطعی بیماری بر اساس یک یافته منفرد.</li>
+      <li>رد بیماری صرفاً به دلیل طبیعی بودن رادیوگرافی.</li>
+      <li>تفسیر یک تصویر پرتابل AP مانند تصویر استاندارد PA.</li>
+    </ul>
+  </section>
+
+  <section class="card" id="summary">
+    <h2>۷. جمع‌بندی</h2>
+    <p>برای شروع تفسیر CXR این ترتیب را به خاطر بسپار:</p>
+    <ol>
+      <li>تأیید مشخصات بیمار و بررسی نمای تصویر.</li>
+      <li>ارزیابی چرخش، دم و نفوذ اشعه.</li>
+      <li>بررسی راه هوایی و ریه‌ها.</li>
+      <li>ارزیابی قلب، مدیاستن و عروق.</li>
+      <li>بررسی دیافراگم، استخوان‌ها و بافت نرم.</li>
+      <li>تطبیق یافته‌ها با شرح حال و وضعیت بالینی بیمار.</li>
+    </ol>
+    <div class="info">
+      بهترین راه یادگیری، تمرین منظم روی تصاویر واقعی و مقایسه
+      برداشت خودت با گزارش رادیولوژی و نظر استاد است.
+    </div>
+  </section>
+
+  <section class="card" id="references">
+    <h2>۸. منابع پیشنهادی برای مطالعه بیشتر</h2>
+    <ul>
+      <li>
+        <a href="https://radiologyassistant.nl/" target="_blank" rel="noopener">
+          The Radiology Assistant
+        </a>
+        — آموزش تصویربرداری و الگوهای رادیولوژیک.
+      </li>
+      <li>
+        <a href="https://www.radiologymasterclass.co.uk/" target="_blank" rel="noopener">
+          Radiology Masterclass
+        </a>
+        — آموزش مقدماتی و سیستماتیک رادیوگرافی قفسه سینه.
+      </li>
+      <li>
+        <a href="https://www.acr.org/" target="_blank" rel="noopener">
+          American College of Radiology
+        </a>
+        — منابع حرفه‌ای و راهنماهای تصویربرداری.
+      </li>
+    </ul>
+    <p class="meta" style="color:#657875">
+      این مقاله یک راهنمای مقدماتی آموزشی است و جایگزین
+      منابع جامع رادیولوژی، آموزش تخصصی یا ارزیابی بالینی نیست.
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <strong>OuriaMed | اوریامد</strong>
+    <p>دانش پزشکی، ساده و دقیق.</p>
+    <p>محتوای آموزشی؛ نه جایگزین تشخیص یا درمان پزشکی.</p>
+    <a href="../index.html">بازگشت به صفحه اصلی</a>
+  </div>
+</footer>
+
+</body>
+</html>
